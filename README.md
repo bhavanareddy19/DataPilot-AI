@@ -130,7 +130,7 @@ Building intelligent systems that automate complex data science workflows throug
 ## 🏗️ System Architecture
 
 <div align="center">
-<img src="diagram-export-1-21-2026-11_29_44-AM.png" alt="DataPilot AI Pro - System Architecture" width="100%">
+<img src="Data Pilot Architecture.png" alt="DataPilot AI Pro - System Architecture" width="100%">
 </div>
 
 ---
