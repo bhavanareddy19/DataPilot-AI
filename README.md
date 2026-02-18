@@ -129,69 +129,9 @@ Building intelligent systems that automate complex data science workflows throug
 
 ## 🏗️ System Architecture
 
-```mermaid
-flowchart TB
-    subgraph UI["🖥️ User Interface Layer"]
-        ST[Streamlit App]
-        API[REST API]
-        CLI[CLI Interface]
-    end
-
-    subgraph ORCH["🔄 Orchestration Layer"]
-        LG[LangGraph State Machine]
-        PF[Prefect Workflows]
-        CL[Celery Tasks]
-    end
-
-    subgraph AGENTS["🤖 Multi-Agent Layer"]
-        PA[Profiler Agent]
-        CA[Cleaner Agent]
-        FA[Feature Agent]
-        VA[Visualization Agent]
-        MA[Modeler Agent]
-        EA[Explainer Agent]
-    end
-
-    subgraph LLM["🧠 LLM Layer"]
-        OL[Ollama - Llama 3.1]
-        GQ[Groq API]
-    end
-
-    subgraph RL["🎯 RL Selector"]
-        MF[Meta-Features]
-        PPO[PPO Agent]
-        MP[Model Pool]
-    end
-
-    subgraph ML["⚙️ ML Engine"]
-        PC[PyCaret]
-        OP[Optuna]
-        XG[XGBoost]
-        LB[LightGBM]
-        CB[CatBoost]
-    end
-
-    subgraph DATA["💾 Data Layer"]
-        PG[(PostgreSQL)]
-        QD[(Qdrant)]
-        RD[(Redis)]
-        FS[Feast Store]
-    end
-
-    subgraph MLOPS["📦 MLOps Layer"]
-        MLF[MLflow]
-        DVC[DVC]
-        BM[BentoML]
-    end
-
-    UI --> ORCH
-    ORCH --> AGENTS
-    AGENTS --> LLM
-    AGENTS --> RL
-    RL --> ML
-    ML --> DATA
-    ML --> MLOPS
-```
+<div align="center">
+<img src="diagram-export-1-21-2026-11_29_44-AM.png" alt="DataPilot AI Pro - System Architecture" width="100%">
+</div>
 
 ---
 
